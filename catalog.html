@@ -40,6 +40,8 @@
   .tag.plan{background:#15311f;color:var(--green)}
   .tag.opt{background:#3a3312;color:var(--sun)}
   .tag.cut{background:#3a1e1e;color:var(--red)}
+  .tag.done{background:#232833;color:var(--muted)}
+  .row.done{opacity:.55}
   .map{flex-shrink:0;width:38px;height:38px;border-radius:10px;background:var(--card2);
     border:1px solid var(--line);display:flex;align-items:center;justify-content:center;
     font-size:17px;text-decoration:none}
@@ -57,18 +59,19 @@
     <span class="lg plan">✓ In the plan</span>
     <span class="lg opt">◇ Optional</span>
     <span class="lg cut">✕ Cut</span>
+    <span class="lg done">✓ Already visited</span>
   </div>
 
   <!-- CENTRO -->
   <h3 class="sec">🏛️ Centro histórico</h3>
 
-  <div class="row"><div class="body"><div class="name">Plaza de Mayo <span class="tag plan">plan</span></div><div class="desc">Founding heart of the city</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Plaza+de+Mayo+Buenos+Aires">📍</a></div>
-  <div class="row"><div class="body"><div class="name">Casa Rosada <span class="tag plan">plan</span></div><div class="desc">The pink presidential palace</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Casa+Rosada+Buenos+Aires">📍</a></div>
-  <div class="row"><div class="body"><div class="name">Cabildo <span class="tag plan">plan</span></div><div class="desc">Colonial town hall on the plaza</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Cabildo+de+Buenos+Aires">📍</a></div>
-  <div class="row"><div class="body"><div class="name">Catedral Metropolitana <span class="tag plan">plan</span></div><div class="desc">Cathedral · Pope Francis served here</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Catedral+Metropolitana+Buenos+Aires">📍</a></div>
-  <div class="row"><div class="body"><div class="name">Congreso Nacional <span class="tag plan">plan</span></div><div class="desc">Domed parliament, end of Av. de Mayo</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Congreso+de+la+Nacion+Buenos+Aires">📍</a></div>
-  <div class="row"><div class="body"><div class="name">Palacio Barolo <span class="tag plan">plan</span></div><div class="desc">Dante-inspired tower + rooftop tour</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Palacio+Barolo+Buenos+Aires">📍</a></div>
-  <div class="row"><div class="body"><div class="name">Obelisco (9 de Julio) <span class="tag opt">optional</span></div><div class="desc">Pass it on the widest avenue</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Obelisco+Buenos+Aires">📍</a></div>
+  <div class="row done"><div class="body"><div class="name">Plaza de Mayo <span class="tag done">visited</span></div><div class="desc">Founding heart of the city</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Plaza+de+Mayo+Buenos+Aires">📍</a></div>
+  <div class="row done"><div class="body"><div class="name">Casa Rosada <span class="tag done">visited</span></div><div class="desc">The pink presidential palace</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Casa+Rosada+Buenos+Aires">📍</a></div>
+  <div class="row done"><div class="body"><div class="name">Cabildo <span class="tag done">visited</span></div><div class="desc">Colonial town hall on the plaza</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Cabildo+de+Buenos+Aires">📍</a></div>
+  <div class="row done"><div class="body"><div class="name">Catedral Metropolitana <span class="tag done">visited</span></div><div class="desc">Cathedral · Pope Francis served here</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Catedral+Metropolitana+Buenos+Aires">📍</a></div>
+  <div class="row"><div class="body"><div class="name">Congreso Nacional <span class="tag opt">optional</span></div><div class="desc">Domed parliament, end of Av. de Mayo</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Congreso+de+la+Nacion+Buenos+Aires">📍</a></div>
+  <div class="row"><div class="body"><div class="name">Palacio Barolo <span class="tag opt">optional</span></div><div class="desc">Dante-inspired tower + rooftop tour</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Palacio+Barolo+Buenos+Aires">📍</a></div>
+  <div class="row done"><div class="body"><div class="name">Obelisco (9 de Julio) <span class="tag done">visited</span></div><div class="desc">Pass it on the widest avenue</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Obelisco+Buenos+Aires">📍</a></div>
   <div class="row"><div class="body"><div class="name">Teatro Colón <span class="tag opt">optional</span></div><div class="desc">Opera house · guided tours (book ahead)</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Teatro+Colon+Buenos+Aires">📍</a></div>
 
   <!-- RECOLETA -->
@@ -83,11 +86,11 @@
   <!-- SUR -->
   <h3 class="sec">🎨 San Telmo & el sur</h3>
 
-  <div class="row"><div class="body"><div class="name">San Telmo (barrio) <span class="tag plan">plan</span></div><div class="desc">Cobblestones, antiques, old cafés</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=San+Telmo+Buenos+Aires">📍</a></div>
-  <div class="row"><div class="body"><div class="name">Mercado de San Telmo <span class="tag plan">plan</span></div><div class="desc">Indoor market (open Tue) · lunch</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Mercado+de+San+Telmo">📍</a></div>
-  <div class="row"><div class="body"><div class="name">La Boca <span class="tag cut">cut</span></div><div class="desc">Colorful south barrio · taxi door-to-door</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=La+Boca+Buenos+Aires">📍</a></div>
-  <div class="row"><div class="body"><div class="name">Caminito <span class="tag cut">cut</span></div><div class="desc">Painted alley · opposite direction</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Caminito+La+Boca+Buenos+Aires">📍</a></div>
-  <div class="row"><div class="body"><div class="name">La Bombonera <span class="tag cut">cut</span></div><div class="desc">Boca Juniors stadium + museum</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=La+Bombonera+Buenos+Aires">📍</a></div>
+  <div class="row done"><div class="body"><div class="name">San Telmo (barrio) <span class="tag done">visited</span></div><div class="desc">Cobblestones, antiques, old cafés</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=San+Telmo+Buenos+Aires">📍</a></div>
+  <div class="row"><div class="body"><div class="name">Mercado de San Telmo <span class="tag plan">plan</span></div><div class="desc">Indoor market (open Tue) · lunch — if you missed it</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Mercado+de+San+Telmo">📍</a></div>
+  <div class="row done"><div class="body"><div class="name">La Boca <span class="tag done">visited</span></div><div class="desc">Colorful south barrio</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=La+Boca+Buenos+Aires">📍</a></div>
+  <div class="row done"><div class="body"><div class="name">Caminito <span class="tag done">visited</span></div><div class="desc">Painted alley</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Caminito+La+Boca+Buenos+Aires">📍</a></div>
+  <div class="row done"><div class="body"><div class="name">La Bombonera <span class="tag done">visited</span></div><div class="desc">Boca Juniors stadium + museum</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=La+Bombonera+Buenos+Aires">📍</a></div>
 
   <!-- PALERMO -->
   <h3 class="sec">🌳 Palermo & el norte</h3>
@@ -101,12 +104,12 @@
   <!-- ESTE -->
   <h3 class="sec">🌊 Puerto Madero & Retiro</h3>
 
-  <div class="row"><div class="body"><div class="name">Puente de la Mujer <span class="tag opt">optional</span></div><div class="desc">Calatrava footbridge on the water</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Puente+de+la+Mujer+Puerto+Madero">📍</a></div>
-  <div class="row"><div class="body"><div class="name">Puerto Madero <span class="tag opt">optional</span></div><div class="desc">Modern docklands promenade</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Puerto+Madero+Buenos+Aires">📍</a></div>
+  <div class="row done"><div class="body"><div class="name">Puente de la Mujer <span class="tag done">visited</span></div><div class="desc">Calatrava footbridge on the water</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Puente+de+la+Mujer+Puerto+Madero">📍</a></div>
+  <div class="row done"><div class="body"><div class="name">Puerto Madero <span class="tag done">visited</span></div><div class="desc">Modern docklands promenade</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Puerto+Madero+Buenos+Aires">📍</a></div>
   <div class="row"><div class="body"><div class="name">Retiro <span class="tag cut">cut</span></div><div class="desc">Grand train station + plaza</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Estacion+Retiro+Buenos+Aires">📍</a></div>
 
   <!-- TANGO -->
-  <h3 class="sec">💃 Tango shows (evening · book ahead)</h3>
+  <h3 class="sec">💃 Tango shows — you already did one (meh). Only if you want a better night.</h3>
 
   <div class="row"><div class="body"><div class="name">Señor Tango <span class="tag opt">evening</span></div><div class="desc">Big spectacular dinner-show</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Senor+Tango+Buenos+Aires">📍</a></div>
   <div class="row"><div class="body"><div class="name">El Viejo Almacén <span class="tag opt">evening</span></div><div class="desc">Historic, intimate, traditional</div></div><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=El+Viejo+Almacen+Buenos+Aires">📍</a></div>
